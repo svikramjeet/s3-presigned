@@ -4,7 +4,6 @@ namespace Svikramjeet\S3Presigned;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Svikramjeet\S3Presigned\Commands\S3PresignedCommand;
 
 class S3PresignedServiceProvider extends PackageServiceProvider
 {
