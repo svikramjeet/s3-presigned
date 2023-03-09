@@ -15,12 +15,6 @@ You can install the package via composer:
 composer require svikramjeet/s3-presigned
 ```
 
-You can publish with:
-
-```bash
-php artisan vendor:publish 
-```
-
 You can publish the config file with:
 
 ```bash
@@ -31,8 +25,8 @@ php artisan vendor:publish --tag="s3-presigned-config"
 ## Usage
 
 ```php
-$s3Presigned = new Svikramjeet\S3Presigned();
-echo $s3Presigned->getSignedPutRequest($request);
+$s3Presigned = new Svikramjeet\S3Presigned\S3Presigned();
+echo $s3Presigned->getSignedPutRequest($request)['presigned_url'];
 ```
 
 
