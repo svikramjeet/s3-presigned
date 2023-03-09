@@ -23,7 +23,7 @@ composer require svikramjeet/s3-presigned
 You can publish with:
 
 ```bash
-php artisan vendor:publish --tag="s3-presigned-migrations"
+php artisan vendor:publish 
 ```
 
 You can publish the config file with:
@@ -32,25 +32,14 @@ You can publish the config file with:
 php artisan vendor:publish --tag="s3-presigned-config"
 ```
 
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
 
 ## Usage
 
 ```php
 $s3Presigned = new Svikramjeet\S3Presigned();
-echo $s3Presigned->echoPhrase('Hello, Svikramjeet!');
+echo $s3Presigned->getSignedPutRequest($request);
 ```
 
-## Testing
-
-```bash
-composer test
-```
 
 ## Changelog
 
