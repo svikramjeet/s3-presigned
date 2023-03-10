@@ -4,7 +4,9 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/svikramjeet/s3-presigned/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/svikramjeet/s3-presigned/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/svikramjeet/s3-presigned.svg?style=flat-square)](https://packagist.org/packages/svikramjeet/s3-presigned)
 
-Create presigned url for S3 object for uploading via PUT
+Create presigned url for S3 object
+- for uploading an object to S3 via Put
+- for get presigned URL for already uploaded object to S3 
 
 
 ## Installation
