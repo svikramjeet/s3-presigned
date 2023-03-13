@@ -1,5 +1,5 @@
 {
-    "name": "svikramjeet/s3-presigned",
+    "name": "s3Presigned",
     "description": "PHP wrapper of S3 api for pre-signed url",
     "keywords": [
         "svikramjeet",
