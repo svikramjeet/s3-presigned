@@ -21,14 +21,19 @@ class S3Presigned
         ]);
     }
 
-    public function getSignedPutRequest(Request $request): array
+    public function createPresignedForPutRequest(Request $request): array
     {
         return $this->getSignedRequest($request->file ?? 'put.png', 'PutObject');
     }
 
-    public function getSignedGetRequest(Request $request): array
+    public function createPresignedForGetRequest(Request $request): array
     {
         return $this->getSignedRequest($request->file ?? 'get.png', 'GetObject');
+    }
+
+    public function createPresignedForPostRequest(Request $request): array
+    {
+        return $this->getSignedRequest($request->file ?? 'get.png', 'PostObject');
     }
 
     private function getSignedRequest(string $file, string $type): array

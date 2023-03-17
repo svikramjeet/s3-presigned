@@ -26,9 +26,22 @@ php artisan vendor:publish --tag="s3-presigned-config"
 
 ## Usage
 
+### Get url for private s3 object
 ```php
 $s3Presigned = new Svikramjeet\S3Presigned\S3Presigned();
-echo $s3Presigned->getSignedPutRequest($request)['presigned_url'];
+echo $s3Presigned->createPresignedForGetRequest($request)['presigned_url'];
+```
+
+### Get url to upload object via presigned POST request
+```php
+$s3Presigned = new Svikramjeet\S3Presigned\S3Presigned();
+echo $s3Presigned->createPresignedForPostRequest($request)['presigned_url'];
+```
+
+### Get url to upload object via presigned PUT request
+```php
+$s3Presigned = new Svikramjeet\S3Presigned\S3Presigned();
+echo $s3Presigned->createPresignedForPutRequest($request)['presigned_url'];
 ```
 
 
